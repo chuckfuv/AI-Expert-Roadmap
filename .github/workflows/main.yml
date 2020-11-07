@@ -6,15 +6,7 @@ name: Blob storage website CI
 # events but only for the main branch
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-    
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
+    br
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
